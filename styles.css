@@ -234,19 +234,6 @@ header h1 {
   color: var(--sub);
 }
 
-.badge {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 600;
-  line-height: 1.4;
-  padding: 0.05rem 0.45rem;
-  border-radius: 999px;
-  color: var(--note-text);
-  background: var(--note-bg);
-  border: 1px solid var(--accent);
-  vertical-align: middle;
-}
-
 .memo-figure {
   margin: 0.6rem 0 0.4rem;
 }
