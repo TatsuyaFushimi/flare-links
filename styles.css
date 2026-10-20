@@ -253,7 +253,7 @@ header h1 {
 
 .memo-figure img {
   display: block;
-  max-width: 100%;
+  max-width: min(100%, 480px);
   height: auto;
   border: 1px solid var(--border);
   border-radius: 6px;

@@ -14,6 +14,15 @@ fetch('./links.json')
 
 function render(data) {
   var app = document.getElementById('app');
+  app.innerHTML = '';
+
+  var hasLinks = data.some(function(category) {
+    return category.links && category.links.length > 0;
+  });
+  if (!hasLinks) {
+    app.innerHTML = '<p class="loading">リンクがありません</p>';
+    return;
+  }
 
   data.forEach(function(category) {
     if (!category.links || category.links.length === 0) return;
