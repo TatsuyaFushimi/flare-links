@@ -1,0 +1,276 @@
+:root {
+  --bg: #f5f5f5;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --sub: #666666;
+  --border: #e0e0e0;
+  --accent: #e85d04;
+  --note-bg: #fff8f5;
+  --note-text: #9a3a00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --text: #f0f0f0;
+    --sub: #999999;
+    --border: #2e2e2e;
+    --accent: #ff7d26;
+    --note-bg: #2a1a0e;
+    --note-text: #ffab6e;
+  }
+
+  .link-card:hover {
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.07);
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+header {
+  padding: 2rem 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.category-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sub);
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+  margin-bottom: 1rem;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+  justify-content: start;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.link-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.link-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.link-card:active {
+  transform: scale(0.98);
+}
+
+.link-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.link-domain {
+  font-size: 0.78rem;
+  color: var(--sub);
+}
+
+.link-note {
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--note-text);
+  background: var(--note-bg);
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+.loading {
+  color: var(--sub);
+  text-align: center;
+  padding: 40px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1.25rem 1rem 1rem;
+  }
+
+  #app {
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+  }
+
+  .link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .error {
+    color: #e74c3c;
+  }
+}
+
+/* memo.html */
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--sub);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.memo {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-wrap: anywhere;
+}
+
+.memo-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--accent);
+}
+
+.memo-step {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.memo-step h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.memo-step ul,
+.memo-step ol {
+  padding-left: 1.4rem;
+  font-size: 0.92rem;
+}
+
+.memo-step li {
+  margin: 0.3rem 0;
+}
+
+.memo-step li > ul,
+.memo-step li > ol {
+  margin-top: 0.3rem;
+}
+
+.memo-step a {
+  color: var(--accent);
+}
+
+.memo-aside {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--sub);
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  color: var(--note-text);
+  background: var(--note-bg);
+  border: 1px solid var(--accent);
+  vertical-align: middle;
+}
+
+.memo-figure {
+  margin: 0.6rem 0 0.4rem;
+}
+
+.memo-figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.memo-figure figcaption {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--sub);
+}
+
+@media (max-width: 480px) {
+  .memo {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+
+  .memo-step {
+    padding: 1rem;
+  }
+}

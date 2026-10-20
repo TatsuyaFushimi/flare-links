@@ -1,0 +1,40 @@
+[
+  {
+    "category": "入社時メモ",
+    "links": [
+      { "title": "入社時メモ", "url": "memo.html", "note": "" }
+    ]
+  },
+  {
+    "category": "ツール関連",
+    "links": [
+      { "title": "ショートタイトル生成ツール", "url": "https://cheery-bonbon-385e2d.netlify.app/", "note": "" },
+      { "title": "YouQR（動的QR生成WEBアプリ）", "url": "https://qr.busoken-yttm.workers.dev/admin", "note": "" }
+    ]
+  },
+  {
+    "category": "編集D関連",
+    "links": [
+      { "title": "編集Dマニュアル", "url": "https://docs.google.com/document/d/1Ttu4u-bh4d1RFnbNBVQQdEm2elsBGn9ahudzZUYaSgQ/", "note": "" },
+      { "title": "募集確認シート", "url": "https://docs.google.com/spreadsheets/d/1pKk026tw0bHouOKMGORDZ69tUbN9nIm6ITVrbVWIrQs/", "note": "" },
+      { "title": "編集素材", "url": "https://drive.google.com/drive/folders/1Ty4jftEeyZjtC50_bhtdaXu9lS4eDZ1u", "note": "" }
+    ]
+  },
+  {
+    "category": "YouTubeTM関連",
+    "links": [
+      { "title": "成果管理シート", "url": "https://docs.google.com/spreadsheets/d/1ohEeLAAaJaGHmwryy9meEJ_tHMdAo_Xt3Njx6yNGt28/", "note": "" },
+      { "title": "脳筋シート", "url": "https://docs.google.com/spreadsheets/d/1FYKyaYRzZeGHph_6pp3t9QOJ__PCf5bKxRobC5a6rYk/", "note": "" },
+      { "title": "動画成果シート", "url": "https://docs.google.com/spreadsheets/d/1QwcJzmgWoz3mNFT-PBglnxcLAo1UXwgEzEb1xMabZHM/", "note": "" },
+      { "title": "制作管理シート", "url": "https://docs.google.com/spreadsheets/d/1VswrYvsGmY7hKLXwIjh9cptVHqhwthCiy5hatLvn-A4/", "note": "" },
+      { "title": "LINE誘導成果シート", "url": "https://docs.google.com/spreadsheets/d/1Wc0J10NeotXyf09XCIK_fenLpiuvOYQUOq6Qs0l9Q1M/", "note": "" },
+      { "title": "ショート動画成果シート", "url": "https://docs.google.com/spreadsheets/d/1Y5Az5TAk6MyowZ0JIbkx6hInfH5XkohR8YN9JpcUYYk/", "note": "" }
+    ]
+  },
+  {
+    "category": "その他",
+    "links": [
+      { "title": "伏見勉強録", "url": "https://tatsuyafushimi.github.io/fushimiLog/", "note": "" }
+    ]
+  }
+]
